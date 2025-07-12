@@ -11,4 +11,4 @@ jobs:
       - name: build
         run: |
             docker build . -t nginx:osh2
-            docker push oshari/nginxLosh2
+            docker push oshari/nginx:osh2
