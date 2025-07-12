@@ -10,5 +10,5 @@ jobs:
         uses: actions/checkout@v2
       - name: build
         run: |
-            docker build . -t oshari/nginx:osh2
-            docker push oshari/nginx:osh2
+            docker build . -t oshari/nginx:osh22
+            docker push oshari/nginx:osh22
