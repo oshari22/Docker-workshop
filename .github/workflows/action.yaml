@@ -1,0 +1,13 @@
+name: Build & Deploy to test
+on:
+  push:
+
+jobs:
+  Deploy-to-test-cluster:
+    runs-on: self-hosted
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+      - name: build
+        run: |
+            docker build . -t nginx:osh
